@@ -247,34 +247,20 @@ h4:hover::after {
 	padding: 0 50px 50px;
 	position: relative;
 }
-.hobbies ul {
-	display: flex;
-	margin-top: 30px;
-	gap: 20px;
-	justify-content: space-between;
-	padding-left: 80px;
-	padding-right: 80px;
-}
-.hobbies ul li {
-	list-style: none;
-	color: #333;
-	width: 100px;
-	height: 95px;
-	border-radius: 50%;
+
+.certificates {
+	width: 90%;
 	display: flex;
 	flex-direction: column;
-	background: #ffffff;
-	text-align: center;
-	cursor: pointer;
-	transition: 0.8s;
-	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
-.hobbies ul li:hover {
-	transform: scale(1.1);
+
+.certificates .cert {
+	color: #fff;
 }
-.hobbies ul li i {
-	font-size: 1.6em;
-	color: #640659;
+
+.certificates .cert .header {
+	font-weight: bold;
+	font-size: 18px;
 }

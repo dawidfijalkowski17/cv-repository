@@ -38,10 +38,10 @@ body {
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 1000px;
+
 	min-height: 1000px;
 	background: #fff9f9;
-	margin: 50px;
+
 	box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
 .top {
@@ -119,7 +119,8 @@ h2 span {
 	width: 100%;
 }
 .group .imgBx img {
-	width: 100%;
+	margin-left: 130px;
+	width: 50%;
 	border-radius: 50%;
 	border-bottom: 5px solid #640659;
 }
@@ -132,10 +133,10 @@ h2 span {
 	display: grid;
 	margin: 50px 50px 0;
 	gap: 40px;
+
 	grid-template-columns: 2fr 3fr;
 }
 .bottom .left_side {
-	margin-top: 50px;
 }
 h4 {
 	font-size: 1.1em;
@@ -254,6 +255,10 @@ h4:hover::after {
 	transition: all .4s ease-in-out;
 }
 
+.edu_groupBx .value p {
+	font-size: 14px;
+}
+
 .edu_groupBx .value:hover {
 	transform: scale(1.05);
 }
@@ -285,13 +290,10 @@ h4:hover::after {
 }
 .hobbies ul li {
 	list-style: none;
-	color: #333;
-	width: 100px;
-	height: 95px;
-	border-radius: 50%;
+	color: #fff;
 	display: flex;
+	height: 95px;
 	flex-direction: column;
-	background: #ffffff;
 	text-align: center;
 	cursor: pointer;
 	transition: 0.8s;
@@ -304,7 +306,7 @@ h4:hover::after {
 }
 .hobbies ul li i {
 	font-size: 1.6em;
-	color: #640659;
+	color: #fff;
 }
 .hobbies ul li .text {
 	font-size: 14px!important;
@@ -322,7 +324,15 @@ h4:hover::after {
 }
 
 .consent {
-	font-size: 12px;
+	font-size: 14px;
+}
+
+small {
+	font-size: 10px;
+}
+
+.subtext {
+	font-size: 14px;
 }
 </style>
 </head>
@@ -330,28 +340,25 @@ h4:hover::after {
 	<div class="container">
 		<div class="top">
 			<div class="polygon">
-				<!-- <img class="img-first" src="logo.png"> -->
+
 			</div>
 			<div class="group-2">
-				<h2>Dawid Fijałkowski<br><span>Front-end Developer</span></h2>
-				<!-- <img class="img-second" src="logo.png"> -->
+				<h2>Dominik Wawrzkiewicz<br><span>DevOps Consultant</span></h2>
+				<img class="img-second" src="https://i.ibb.co/GQxwn4Y/logo.png">
 			</div>
 
 			<div class="group">
 				<div class="leftSide">
 					<div class="imgBx">
-						<img src="https://i.ibb.co/fG2rYT4/img.jpg" alt="img"></a>
+						<!-- <img src="domek.jpg" alt="img"></a> -->
 					</div>
 				</div>
 				<div class="rightSide">
-					<p>I am a graduate of IT studies at the Kielce University of
-						Technology. I'm interested in web application
-						development tools, i.e. Angular, HTML, CSS. I efficiently
-						create responsive websites, web applications and mobile
-						applications using Ionic and Angular. For over two years
-						I have been working as a Angular Front-End Developer in few projects eg.
-						conracts and clients management, task management
-						and in UK's leading gardening charity - RHS.</p>
+					<p>As a DevOps Consultant, I bring to the table a wealth of experience spanning over 4 years, honed in the design and
+						implementation of robust infrastructure, seamless CI/CD pipelines, and applications. My work ethos is characterized
+						by flexibility and a robust drive, aligned with my unwavering motivation to continuously push boundaries. I take
+						immense pride in being an integral part of diverse teams, where the synergy of collaborating with highly skilled
+						professionals truly amplifies the quality and efficiency of the solutions we engineer</p>
 				</div>
 			</div>
 		</div>
@@ -361,131 +368,264 @@ h4:hover::after {
 				<ul class="contactInfo">
 					<li>
 						<span class="icon"><i class="fa-solid fa-phone"></i></span>
-						<span class="text">+48 733 449 714</span>
+						<span class="text">+48 696 069 022</span>
 					</li>
 					<li>
 						<span class="icon"><i class="fa-solid fa-envelope"></i></span>
-						<span class="text"><a href="mailto:dawidfijalkowski17@gmail.com">dawidfijalkowski17@gmail.com</a></span>
+						<span class="text"><a href="mailto:dominikwawrzkiewicz141@gmail.com">dominikwawrzkiewicz141@gmail.com</a></span>
 					</li>
 					<li>
 						<span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
-						<span class="text"><a href="https://www.linkedin.com/in/dawid-fijalkowski17/" target="_blank">dawid-fijalkowski17</a></span>
+						<span class="text"><a href="https://www.linkedin.com/in/dominik-wawrzkiewicz-728083184/" target="_blank">dominik-wawrzkiewicz</a></span>
 					</li>
 					<li>
 						<span class="icon"><i class="fa-solid fa-location-dot"></i></span>
 						<span class="text">Cracow, Poland</span>
 					</li>
 				</ul>
+				<h4 class="adjstMargin" style="margin-top: 30px;">Education</h4>
+				<div class="edu_group">
+					<div class="edu_groupBx">
+						<p>2017-10 </br>
+						2021-07</p>
+						<div class="value">
+							<b>Computer Science, Bachelor of Engineering, Grade: 4.5</b>
+							<p>University of Technology, Kielce</p>
+						</div>
+					</div>
+				</div>
 				
 				<h4>Skills</h4>
 				<div class="skills">
 					<div class="skillsBox" style="--i:100%;">
-						<p><bold>AngularJs, Angular 2+, RxJS, NgXs, REST API, Jasmine/Karma -</bold>
-						building applications, pages and their maintenance, upgrading the applications version</p>
+						<p><bold>AWS</bold></p>
+						<p class="subtext">Being able to architect highly available solutions, make decisions and take ownership of the infrastructure.
+						</p>
 						<div class="value"></div>
 					</div>
 					<div class="skillsBox" style="--i:100%;">
-						<p><bold>HTML 5, CSS, Less, Sass -</bold>
-						creating pages and views in the application from scratch</p>
+						<p><bold>Kubernetes</bold></p>
+						<p class="subtext">Providing clusters, debugging, and offering advice. Leading trainings</p>
 						<div class="value"></div>
 					</div>
 					<div class="skillsBox" style="--i:100%;">
-						<p><bold>Typescript, Javascript -</bold>
-						mainly used for the Angular framework and to create the business logic of the application</p>
+						<p><bold>ArgoCD</bold></p>
+						<p class="subtext">Building continuous deployment solutions and understanding the benefits of the GitOps concept</p>
 						<div class="value"></div>
 					</div>
 					<div class="skillsBox" style="--i:100%;">
-						<p><bold>Twig, Vue.js, React.js -</bold>
-						used it while working on several views in microservices</p>
+						<p><bold>Docker</bold></p>
+						<p class="subtext">Containerizing applications in alignment with best practices and debugging. Leading trainings</p>
 						<div class="value"></div>
 					</div>
 					<div class="skillsBox" style="--i:100%;">
-						<p><bold>PrimeNg, AntDesign, PrimeFlex, Bootstrap -</bold>
-						in each of applications i worked with collection of UI components for Angular</p>
+						<p><bold>Terraform</bold></p>
+						<p class="subtext">Architecting projects in line with best practices, understanding the pros and cons of the tool, and creating comprehensive cloud solutions using Terraform</p>
 						<div class="value"></div>
 					</div>
 					<div class="skillsBox" style="--i:100%;">
-						<p><bold>Jira, GitLab, Azure, Scrum, Docker -</bold>
-						main project management tools and repository I worked with</p>
+						<p><bold>IaC</bold></p>
+						<p class="subtext">Possessing experience in various Infrastructure as Code platforms, understanding the concept, and being capable of its implementation</p>
 						<div class="value"></div>
 					</div>
-					<div class="skillsBox" style="--i:100%; margin-bottom: 30px;">
-						<p><bold>Git, Gitflow, Git History -</bold>
-						source code management tools used by the projects I worked on</p>
+					<div class="skillsBox" style="--i:100%">
+						<p><bold>Linux</bold></p>
+						<p class="subtext">Debugging applications and services with a high level of proficiency</p>
+						<div class="value"></div>
+					</div>
+					<div class="skillsBox" style="--i:100%">
+						<p><bold>Python</bold></p>
+						<p class="subtext">Writing scripts to automate processes </p>
+						<div class="value"></div>
+					</div>
+					<div class="skillsBox" style="--i:100%">
+						<p><bold>Java, Spring</bold></p>
+						<p class="subtext">Having a programming background</p>
+						<div class="value"></div>
+					</div>
+					<div class="skillsBox" style="--i:100%">
+						<p><bold>Agile</bold></p>
+						<p class="subtext">Possessing experience in Agile methodologies</p>
 						<div class="value"></div>
 					</div>
 				</div>
+				<h4 class="adjstMargin" style="margin-top: 20px;">Consent</h4>
+					<div class="edu_group consent"  style="margin-bottom: 50px;">
+						I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).
+					</div>	
 			</div>
 			<div class="right_side">
-				<h4>Work Experience</h4><div class="edu_group">
-					<div class="edu_groupBx">
-						<p>05-2022 - </br> 06-2023</p>
-						<div class="value">
-							<b>Angular Developer<br><span>Royal Horticultural Society</span></b>
-							<p>I was working in RHS project that is the UK's leading gardening
-								charity. Mainly takes care of updating styles and pages for particular components, create new projects from scratch and 
-								update application from angular v4 to angular v12.</p>
-						</div>
-					</div>
-					
-					<div class="edu_groupBx">
-						<p>10-2021 - </br>11-2022</p>
-						<div class="value">
-							<b>Angular Developer<br><span>Altar Sp. zo.o</span></b>
-							<p>I was working as full time Angular developer. I was creating from scratch new pages and functionality in projects
-								which include Sara - contracts and clients management, and ECM - task management.</p>
-						</div>
-					</div>
-					<div class="edu_groupBx">
-						<p>09-2020 - </br> 10-2020</p>
-						<div class="value">
-							<b>Intern Angular Developer<br><span>Infover S.A</span></b>
-							<p>Internship at Infover S.A.
-								Working on the project of the mine management application,
-								implementation in the Angular framework, RxJS and databases
-								data.</p>
-						</div>
-					</div>
-				</div>
-				<h4 class="adjstMargin">Education</h4>
+				<h4>Work Experience</h4>
 				<div class="edu_group">
 					<div class="edu_groupBx">
-						<p>2018-2022</p>
+						<p>2023-08 - </br> present</p>
 						<div class="value">
-							<b>Kielce University of Technology</b>
-							<p>Kielce University of Technology Computer Science</p>
+							<b>DevOps Engineer<br><span>Kontiguit</span></b>
+							<p>Head of DevOps 
+								Building a team of specialists in cloud services. Preparing development strategies for DevOps branch.</p>
 						</div>
 					</div>
 					<div class="edu_groupBx">
-						<p>2014-2018</p>
+						<p>2023-03 - </br> 2023-08</p>
 						<div class="value">
-							<b>Technical school</b>
-							<p>Technical school of computer science in Cudzynowice.</p>
+							<b>DevOps Engineer<br><span>Sopra Steria, Katowice</span></b>
+							<p>Maintaining existing solutions, providing kubernetes clusters for developers. Solving their issues
+								with <b>Kubernetes, Docker, ArgoCD, AWS</b> and internal solutions. Writing <b>boto3</b> scripts to
+								prepare raports about AWS infrastructure. Cleaning the AWS infrastructure to lower expenses on
+								the cloud and supervising it. As an example</p>
 						</div>
 					</div>
 					
-				</div>
-				<h4 class="adjstMargin">Consent</h4>
-				<div class="edu_group consent">
-					I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).
-				</div>
-				
+					<div class="edu_groupBx">
+						<p>2022-05 - </br>2023-03</p>
+						<div class="value">
+							<b>DevOps Consultant<br><span>Eficode, Copenhagen</span></b>
+							<p>As a DevOps consultant, I worked independently at the client's site, advising them and assisting
+								in achieving their objectives across various technologies. My key contributions included building
+								ArgoCD solutions and creating infrastructure on Oracle Cloud and Azure using Terraform. It was
+								an on-site position in Copenhagen.
+								My projects included:
+							</p>
+							<p style="margin-top: 10px;">
+								- Refactoring Kafka Terraform modules from Azure to Oracle Cloud Infrastructure (OCI) as a
+								cost-reduction strategy. </br>
+								- Developing Continuous Deployment solutions with ArgoCD, Helm, and Kubernetes.</br>
+								- Implementing strategies to reduce AWS costs.</br>
+								- Advising on and refining Terraform code to simplify the solution.</br>
+								- Automating AWS S3 migration in line with best practices.</br>
+								- Providing problem-solving support for customers and coordinating with various stakeholders.</br>
+								- Leading a portion of the Kubernetes and Docker training at the Eficode Academy for bussiness
+								and universities"
+							</p>
+						</div>
+					</div>
+					<div class="edu_groupBx">
+						<p>2023-03 - </br> 2023-08</p>
+						<div class="value">
+							<b>DevOps Engineer<br><span>Sopra Steria, Katowice</span></b>
+							<p>Maintaining existing solutions, providing kubernetes clusters for developers. Solving their issues
+								with <b>Kubernetes, Docker, ArgoCD, AWS</b> and internal solutions. Writing <b>boto3</b> scripts to
+								prepare raports about AWS infrastructure. Cleaning the AWS infrastructure to lower expenses on
+								the cloud and supervising it. As an example</p>
+						</div>
+					</div>
+					
+					<div class="edu_groupBx">
+						<p>2022-05 - </br>2023-03</p>
+						<div class="value">
+							<b>DevOps Consultant<br><span>Eficode, Copenhagen</span></b>
+							<p>As a DevOps consultant, I worked independently at the client's site, advising them and assisting
+								in achieving their objectives across various technologies. My key contributions included building
+								ArgoCD solutions and creating infrastructure on Oracle Cloud and Azure using Terraform. It was
+								an on-site position in Copenhagen.
+								My projects included:
+							</p>
+							<p style="margin-top: 10px;">
+								- Refactoring Kafka Terraform modules from Azure to Oracle Cloud Infrastructure (OCI) as a
+								cost-reduction strategy. </br>
+								- Developing Continuous Deployment solutions with ArgoCD, Helm, and Kubernetes.</br>
+								- Implementing strategies to reduce AWS costs.</br>
+								- Advising on and refining Terraform code to simplify the solution.</br>
+								- Automating AWS S3 migration in line with best practices.</br>
+								- Providing problem-solving support for customers and coordinating with various stakeholders.</br>
+								- Leading a portion of the Kubernetes and Docker training at the Eficode Academy for bussiness
+								and universities"
+							</p>
+						</div>
+					</div>
+					<div class="edu_groupBx">
+						<p>2021-11 - </br> 2022-04</p>
+						<div class="value">
+							<b>Senior Infrastructure Engineer<br><span>Capgemini, Warsaw</span></b>
+							<p>Analyzing open source software vulnerabilities and admitting them for use. Writing Django
+								application to automate the solution</p>
+						</div>
+					</div>
+					<div class="edu_groupBx">
+						<p>2021-03 - </br> 2021-10</p>
+						<div class="value">
+							<b>DevOps Engineer<br><span>The Software House, Gliwice</span></b>
+							<p>I contribuited to solutions for a Netherlands bank, my responsibilities spanned from designing
+								Terraform modules for critical infrastructure components such as <b>VPC, RDS, ECS Cluster,
+								WAF</b>, among others, to developing <b>CI/CD</b> pipelines using GitHub Actions. I was instrumental in
+								correcting issues within parts of the infrastructure, like the <b>Redshift</b> cluster, and integrating
+								observability into existing solutions. My role also involved providing comprehensive support to
+								developers on cloud-related operations, creating, evaluating, and offering advice on AWS Cloud
+								solutions. I effectively crafted a <b>multi-account AWS</b> config solution using Terraform and
+								CloudFormation templates in conjunction with <b>AWS Security Hub</b>, thereby offering valuable
+								insights into infrastructure compliance. Additionally, I was preparing and delivering courses on
+								Terraform for TSH members."
+								</p>
+						</div>
+					</div>
+					<div class="edu_groupBx">
+						<p>2019-10 - </br> 2021-03</p>
+						<div class="value">
+							<b>Junior Cloud Engineer<br><span>Bluesoft, Warsaw</span></b>
+							<p>
+								4. International project where I was a member of the firewall team. My main responsibilities
+								encompassed operational tasks, the maintenance of Palo Alto firewalls, and enhancing the
+								existing solution by building monitoring and automation solutions. I managed to automate
+								standard customer requests using <b>Python</b>. Thanks to these scripts, the operational overhead
+								was dramatically lowered. I maintained regular contact with customers from all over the world on
+								daily basis. Technologies utilized included: <b>Palo Alto, Terraform enterprise, AWS, Git, Python,
+								Jenkins.</b> </br></br>
+							
+								3. Worked on Bluesoft's internal product, where my primary role involved auditing an existing
+								infrastructure alongside other architects. The product was designed to be Cloud-first and was
+								hosted on AWS. The infrastructure was seamlessly and automatically deployed using <b>AWS
+								Cloud Development Kit (CDK) for Python</b> and was further streamlined through the utilization of
+								<b>AWS CodePipeline</b> for continuous delivery</br></br>
+								2. I contributed significantly to the 'IT Acceleration' initiative for an international bank. My key
+								responsibilities included deploying applications on <b>AWS EKS</b>, orchestrating <b>Kubernetes</b>
+								resources, containerizing .NET applications, and managing <b>Azure pipelines</b> and Chef
+								cookbooks. I successfully automated deployments to Kubernetes using Chef and Azure
+								pipelines, and positioned applications behind <b>AWS load balancers</b> to enhance their scalability
+								and availability. My technical expertise was demonstrated through the effective use of <b>AWS, Git,
+								Azure Pipelines, Chef, Kubernetes, and Docker.</b> Beyond my technical duties, I took on the
+								role of a knowledge leader, conducting presentations and knowledge-sharing sessions for the
+								client's tech team to foster continuous learning and skill development."</br></br>
+
+								1. Engaged in a project centered on creating infrastructure with <b>Terraform</b> within a <b>CI/CD</b>
+								pipeline, coupled with managing autoscaling infrastructure running applications on <b>ECS</b>. This
+								endeavor provided me with in-depth insights and expanded my knowledge in areas such as
+								CI/CD, Infrastructure as Code (IaC), and AWS. Technologies and services employed during this
+								project included <b>Terraform, Cloudwatch, Codecommit, Git, S3, Codepipeline, SNS, ECS,
+								ECR, with minor utilization of Grafana and Prometheus.</b> Although the project was primarily for
+								learning purposes, it significantly bolstered my technical expertise and proficiency in
+								infrastructure management and CI/CD processes
+							</p>
+						</div>
+					</div>
+					<div class="edu_groupBx">
+						<p>2019-07 - </br> 2019-10</p>
+						<div class="value">
+							<b>Java Developer Trainee<br><span>Transitions Technologies PSC. sp. z o. o., Kielce</span></b>
+							<p>Designed and implemented a weather station application, focusing on the creation of the
+								backend using <b>Java Spring framework</b> and <b>Cassandra</b> for the database engine. Additionally,
+								developed the hardware coding using <b>C++</b></p>
+						</div>
+					</div>
+				</div>		
 			</div>
 		</div>
 		<div class="hobbies">
 			<h4 class="adjstMargin">ACHIEVEMENTS</h4>
 			<ul>
 				<li>
-					<i class="fa-brands fa-angular"></i>
-					<p class="text">Several projects</p>
+					<i class="fa-brands fa-aws" style="margin-bottom: 15px;"></i>
+					<p class="text">AWS Certified Solutions Architect Associate</p>
+					<small>verification id: 1KTQQ4D1PMVQ1FSX</small>
 				</li>
 				<li>
-					<i class="fa-solid fa-mobile-screen"></i>
-					<p class="text">Mobile </br>app</p>
+					<i class="fa-brands fa-linux" style="margin-bottom: 15px;"></i>
+					<p class="text">The Linux Foundation Certified Kubernetes Administrator</p>
+					<small>verification id: LF-e4f6dbgp53</small>
 				</li>
 				<li>
-					<i class="fa-solid fa-graduation-cap"></i>
-					<p class="text">College </br>projects</p>
+					<i class="fa-solid fa-code" style="margin-bottom: 15px;"></i>
+					<p class="text">Hackathon</p>
+					<small>Finished with distinction</small>
 				</li>
 			</ul>
 		</div>
